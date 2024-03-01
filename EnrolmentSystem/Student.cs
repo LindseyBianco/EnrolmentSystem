@@ -24,12 +24,22 @@ namespace EnrolmentSystem
         const string DEFAULT_PROGRAM = "No program provided.";
         const string DEFAULT_DATE_REGISTERED = "No dateRegistered provided.";
 
-        // no arg
+        /// <summary>
+        /// No-arg Default Constructor.
+        /// Creates a new instance of the Student class with default values.
+        /// </summary>
         public Student() : this(DEF_STUDENT_ID, DEFAULT_PROGRAM, DEFAULT_DATE_REGISTERED, new Enrollment())
         {
         }
 
-        // arg with enrolement
+        /// <summary>
+        /// Constructor with Enrolment information.
+        /// Initialises a new instance of the Student class with the specified student ID, program, date registered, and enrollment.
+        /// </summary>
+        /// <param name="studentID">The unique identifier of the student.</param>
+        /// <param name="program">The program in which the student is enrolled.</param>
+        /// <param name="dateRegistered">The date when the student was registered.</param>
+        /// <param name="enrollment">The enrollment details of the student.</param>
         public Student(int studentID, string program, string dateRegistered, Enrollment enrollment) : base()
         {
             StudentID = studentID;
@@ -38,7 +48,15 @@ namespace EnrolmentSystem
             Enrollment = enrollment;
         }
 
-        // arg with enrolement and person
+        /// <summary>
+        /// All-arg Constructor with Enrolment and Person information.
+        /// Initialises a new instance of the Student class with the specified student ID, program, date registered, person details, and enrollment information.
+        /// </summary>
+        /// <param name="studentID">The unique identifier of the student.</param>
+        /// <param name="program">The program in which the student is enrolled.</param>
+        /// <param name="dateRegistered">The date when the student was registered.</param>
+        /// <param name="person">The personal details of the student (name, email, phone number, address).</param>
+        /// <param name="enrollment">The enrollment details of the student.</param>
         public Student(int studentID, string program, string dateRegistered, Person person, Enrollment enrollment) : base(person.Name, person.Email, person.PhoneNumber, person.Address)
         {
             StudentID = studentID;
@@ -46,8 +64,12 @@ namespace EnrolmentSystem
             DateRegistered = dateRegistered;
             Enrollment = enrollment;
         }
-
-        // ToString        
+       
+        /// <summary>
+        /// Override ToString.
+        /// Returns a string representation of the Student object.
+        /// </summary>
+        /// <returns>A string containing the Student's ID, program, and registration date.</returns>
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -59,7 +81,12 @@ namespace EnrolmentSystem
             return stringBuilder.ToString();
         }
 
-        // Equals method
+        /// <summary>
+        /// Override Equals method.
+        /// Determines whether the specified object is equal to the current student.
+        /// </summary>
+        /// <param name="obj">The object to compare with the current student.</param>
+        /// <returns>True if the specified object is equal to the current student; otherwise, false.</returns>
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -72,12 +99,25 @@ namespace EnrolmentSystem
             return student.StudentID == this.StudentID;
         }
 
-        // overload equal operators
+        /// <summary>
+        /// Overload Equal To Operator.
+        /// Determines whether two Student objects are equal.
+        /// </summary>
+        /// <param name="a">The first Student object to compare.</param>
+        /// <param name="b">The second Student object to compare.</param>
+        /// <returns>True if the two Student objects are equal, false otherwise.</returns>
         public static bool operator ==(Student a, Student b)
         {
             return object.Equals(a, b);
         }
 
+        /// <summary>
+        /// Overload Not Equal To Operator.
+        /// Determines whether two Student objects are not equal.
+        /// </summary>
+        /// <param name="a">The first Student object to compare.</param>
+        /// <param name="b">The second Student object to compare.</param>
+        /// <returns>True if the two Student objects are not equal; otherwise, false.</returns>
         public static bool operator !=(Student a, Student b)
         {
             return !object.Equals(a, b);
