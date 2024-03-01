@@ -1,0 +1,7 @@
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\bin\Debug\EnrolmentSystem.exe.config
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\bin\Debug\EnrolmentSystem.exe
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\bin\Debug\EnrolmentSystem.pdb
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\obj\Debug\EnrolmentSystem.csproj.AssemblyReference.cache
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\obj\Debug\EnrolmentSystem.csproj.CoreCompileInputs.cache
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\obj\Debug\EnrolmentSystem.exe
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystemRepo\EnrolmentSystem\obj\Debug\EnrolmentSystem.pdb
