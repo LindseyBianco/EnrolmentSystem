@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EnrolmentSystem
 {
-    public class Student : Person
+    public class Student : Person, IComparable<Student>
     {
         // variables
         private int studentID;
@@ -123,10 +123,48 @@ namespace EnrolmentSystem
             return !object.Equals(a, b);
         }
 
+        public static bool operator <(Student a, Student b)
+        {
+            return a.StudentID < b.StudentID;
+        }
+
+        public static bool operator <=(Student a, Student b)
+        {
+            return a.StudentID <= b.StudentID;
+        }
+
+        public static bool operator >(Student a, Student b)
+        {
+            return a.StudentID > b.StudentID;
+        }
+
+        public static bool operator >=(Student a, Student b)
+        {
+            return a.StudentID >= b.StudentID;
+        }
+
         // override HashSet
         public override int GetHashCode()
         {
             return this.StudentID.GetHashCode() ^ this.dateRegistered.GetHashCode();
         }
+
+
+
+        // override CompareTo
+        public int CompareTo(Student other)
+        {
+            return this.StudentID.CompareTo(other.studentID);
+        }
+        public int CompareTo(object obj)
+        {
+            if (obj == null)
+                throw new ArgumentNullException("obj");
+            if (!(obj is Student))
+                throw new ArgumentException("Expected Student istance is type Student.");
+            return CompareTo((Student)obj);
+        }
+
+        
     }
 }
