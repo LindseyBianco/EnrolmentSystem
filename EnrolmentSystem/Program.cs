@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +12,9 @@ namespace EnrolmentSystem
     {
         static void Main(string[] args)
         {
+            // Assignment 01 - Data Structures and Algorithms
+            // Part 01
+
             // class testing
             Address address01 = new Address();
             Person person01 = new Person();
@@ -43,12 +48,38 @@ namespace EnrolmentSystem
             Student student03 = new Student(456, "IT", "01/03/24", person03, enrollment03);
 
             Console.WriteLine(student03.Equals(student02));
-            Console.WriteLine(student03 == student02);
+            Console.WriteLine(student03.Equals(student03));
 
+            Console.WriteLine(student03 == student02);
+            Console.WriteLine(student03 != student02);
+          
+
+            // Part 01 - Hashing
             // get hash code
             Console.WriteLine(student01.GetHashCode());
 
+            // Part 02 - Sorting and Searching Specifications
+            // Part 02.01 - Searching
+            Student student04 = new Student(789, "IT", "12/03/24", new Enrollment());
+            Student student05 = new Student(987, "Chemistry", "12/03/24", new Enrollment());
+            Student student06 = new Student(654, "Art", "12/03/24", new Enrollment());
+
+            DisplayOrder(student04, student05);
+            DisplayOrder(student05, student06);
+            DisplayOrder(student04, student06);
+
             Console.ReadKey();
+        }
+
+        static void DisplayOrder<T>(T x, T y) where T : IComparable<T>
+        {
+            int result = x.CompareTo(y);
+            if (result == 0)
+                Console.WriteLine("{0} = {1}", x, y);
+            else if (result > 0)
+                Console.WriteLine("{0} > {1}", x, y);
+            else
+                Console.WriteLine("{0} < {1}", x, y);
         }
     }
 }

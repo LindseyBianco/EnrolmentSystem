@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EnrolmentSystem
 {
-    public class Student : Person
+    public class Student : Person, IComparable<Student>
     {
         // variables
         private int studentID;
@@ -74,17 +74,18 @@ namespace EnrolmentSystem
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("- Student");
-            stringBuilder.AppendLine($"  - StudentID: {studentID}");
-            stringBuilder.AppendLine($"  - Program: {program}");
-            stringBuilder.AppendLine($"  - Date Registered: {dateRegistered}");
-
+            stringBuilder.AppendLine($"  - StudentID: {StudentID}");
+            stringBuilder.AppendLine($"  - Program: {Program}");
+            stringBuilder.AppendLine($"  - Date Registered: {DateRegistered}");
+            stringBuilder.AppendLine($"  - Enrollment: {Enrollment}");
+            stringBuilder.AppendLine($"  - Person Details: {base.ToString()}");
             return stringBuilder.ToString();
         }
 
         /// <summary>
         /// Override Equals method.
         /// Determines whether the specified object is equal to the current student.
-        /// </summary>
+        /// </summarys
         /// <param name="obj">The object to compare with the current student.</param>
         /// <returns>True if the specified object is equal to the current student; otherwise, false.</returns>
         public override bool Equals(object obj)
@@ -123,10 +124,47 @@ namespace EnrolmentSystem
             return !object.Equals(a, b);
         }
 
+        public static bool operator <(Student a, Student b)
+        {
+            return a.StudentID < b.StudentID;
+        }
+
+        public static bool operator <=(Student a, Student b)
+        {
+            return a.StudentID <= b.StudentID;
+        }
+
+        public static bool operator >(Student a, Student b)
+        {
+            return a.StudentID > b.StudentID;
+        }
+
+        public static bool operator >=(Student a, Student b)
+        {
+            return a.StudentID >= b.StudentID;
+        }
+
         // override HashSet
         public override int GetHashCode()
         {
             return this.StudentID.GetHashCode() ^ this.dateRegistered.GetHashCode();
         }
+
+        // override CompareTo
+        public int CompareTo(Student other)
+        {
+            return this.StudentID.CompareTo(other.studentID);
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj == null)
+                throw new ArgumentNullException("obj");
+            if (!(obj is Student))
+                throw new ArgumentException("Expected Student istance is type Student.");
+            return CompareTo((Student)obj);
+        }
+
+        
     }
 }
