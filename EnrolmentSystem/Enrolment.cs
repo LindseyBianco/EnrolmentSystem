@@ -43,9 +43,10 @@ namespace EnrolmentSystem
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("- Enrollment:");
-            stringBuilder.AppendLine($"  - Date Enrolled: {dateEnrolled}");
-            stringBuilder.AppendLine($"  - Grade: {grade}");
-            stringBuilder.AppendLine($"  - Semester: {semester}");
+            stringBuilder.AppendLine($"  - Date Enrolled: {DateEnrolled}");
+            stringBuilder.AppendLine($"  - Grade: {Grade}");
+            stringBuilder.AppendLine($"  - Semester: {Semester}");
+            stringBuilder.AppendLine($"  - Subject: {Subject}");
             return stringBuilder.ToString();
         }
     }

@@ -48,7 +48,11 @@ namespace EnrolmentSystem
             Student student03 = new Student(456, "IT", "01/03/24", person03, enrollment03);
 
             Console.WriteLine(student03.Equals(student02));
+            Console.WriteLine(student03.Equals(student03));
+
             Console.WriteLine(student03 == student02);
+            Console.WriteLine(student03 != student02);
+          
 
             // Part 01 - Hashing
             // get hash code

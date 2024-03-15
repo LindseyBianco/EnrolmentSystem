@@ -74,17 +74,18 @@ namespace EnrolmentSystem
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("- Student");
-            stringBuilder.AppendLine($"  - StudentID: {studentID}");
-            stringBuilder.AppendLine($"  - Program: {program}");
-            stringBuilder.AppendLine($"  - Date Registered: {dateRegistered}");
-
+            stringBuilder.AppendLine($"  - StudentID: {StudentID}");
+            stringBuilder.AppendLine($"  - Program: {Program}");
+            stringBuilder.AppendLine($"  - Date Registered: {DateRegistered}");
+            stringBuilder.AppendLine($"  - Enrollment: {Enrollment}");
+            stringBuilder.AppendLine($"  - Person Details: {base.ToString()}");
             return stringBuilder.ToString();
         }
 
         /// <summary>
         /// Override Equals method.
         /// Determines whether the specified object is equal to the current student.
-        /// </summary>
+        /// </summarys
         /// <param name="obj">The object to compare with the current student.</param>
         /// <returns>True if the specified object is equal to the current student; otherwise, false.</returns>
         public override bool Equals(object obj)
@@ -149,13 +150,12 @@ namespace EnrolmentSystem
             return this.StudentID.GetHashCode() ^ this.dateRegistered.GetHashCode();
         }
 
-
-
         // override CompareTo
         public int CompareTo(Student other)
         {
             return this.StudentID.CompareTo(other.studentID);
         }
+
         public int CompareTo(object obj)
         {
             if (obj == null)
