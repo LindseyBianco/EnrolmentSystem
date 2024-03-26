@@ -68,6 +68,14 @@ namespace EnrolmentSystem
             DisplayOrder(student05, student06);
             DisplayOrder(student04, student06);
 
+            // Part 02.22 - Sorting 
+            Student[] studentArray = { student01, student02, student03, student04, student05, student06 };
+            Console.WriteLine("\nBubble Sort Intergers:");
+            Utility.BubbleSortAscending(studentArray);
+            foreach (Student student in studentArray)
+            {
+                Console.Write(student.StudentID + " ");
+            }
             Console.ReadKey();
         }
 

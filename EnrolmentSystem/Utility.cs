@@ -66,5 +66,21 @@ namespace EnrolmentSystem
 
             return -1;
         }
+
+        public static void BubbleSortAscending<T>(T[] inputArry) where T : IComparable<T>
+        {
+            for (int j = 0; j < inputArry.Length - 1; j++)
+            {
+                for (int i = 0; i < inputArry.Length - 1; i++)
+                {
+                    if (inputArry[i].CompareTo(inputArry[i + 1]) > 0)
+                    {
+                        T temp = inputArry[i + 1];
+                        inputArry[i + 1] = inputArry[i];
+                        inputArry[i] = temp;
+                    }
+                }
+            }
+        }
     }
 }
