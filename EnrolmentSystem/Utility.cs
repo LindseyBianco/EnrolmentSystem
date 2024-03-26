@@ -67,6 +67,12 @@ namespace EnrolmentSystem
             return -1;
         }
 
+        // bubble sort asc method
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="inputArry"></param>
         public static void BubbleSortAscending<T>(T[] inputArry) where T : IComparable<T>
         {
             for (int j = 0; j < inputArry.Length - 1; j++)
@@ -74,6 +80,26 @@ namespace EnrolmentSystem
                 for (int i = 0; i < inputArry.Length - 1; i++)
                 {
                     if (inputArry[i].CompareTo(inputArry[i + 1]) > 0)
+                    {
+                        T temp = inputArry[i + 1];
+                        inputArry[i + 1] = inputArry[i];
+                        inputArry[i] = temp;
+                    }
+                }
+            }
+        }
+
+        /// <summary>Sorts an array in descending order using the Bubble Sort algorithm.</summary>
+        /// <typeparam name="T">The type of elements in the array that implement the IComparable interface.</typeparam>
+        /// <param name="inputArray">The array to be sorted.</param>
+        /// <remarks>The Bubble Sort algorithm repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.</remarks>
+        public static void BubbleSortDescending<T>(T[] inputArry) where T : IComparable<T>
+        {
+            for (int j = 0; j < inputArry.Length - 1; j++)
+            {
+                for (int i = 0; i < inputArry.Length - 1; i++)
+                {
+                    if (inputArry[i].CompareTo(inputArry[i + 1]) < 0)
                     {
                         T temp = inputArry[i + 1];
                         inputArry[i + 1] = inputArry[i];

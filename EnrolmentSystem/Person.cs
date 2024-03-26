@@ -42,11 +42,11 @@ namespace EnrolmentSystem
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("- Person:");
-            stringBuilder.AppendLine($"  - Name: {Name}");
-            stringBuilder.AppendLine($"  - Email: {Email}");
-            stringBuilder.AppendLine($"  - Phone Number: {PhoneNumber}");
-            stringBuilder.AppendLine($"  - Address: {Address}");
+            stringBuilder.AppendLine("    - Person:");
+            stringBuilder.AppendLine($"       - Name: { Name}");
+            stringBuilder.AppendLine($"       - Email: {Email}");
+            stringBuilder.AppendLine($"       - Phone Number: {PhoneNumber}");
+            stringBuilder.AppendLine($"{Address}");
             return stringBuilder.ToString();
         }
     }

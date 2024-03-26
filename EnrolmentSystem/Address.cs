@@ -48,12 +48,12 @@ namespace EnrolmentSystem
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("- Address:");
-            stringBuilder.AppendLine($"  - Street Num: {StreetNum}");
-            stringBuilder.AppendLine($"  - Street Name: {StreetName}");
-            stringBuilder.AppendLine($"  - Suburb: {Suburb}");
-            stringBuilder.AppendLine($"  - Postcode: {Postcode}");
-            stringBuilder.AppendLine($"  - State: {State}");
+            stringBuilder.AppendLine("       - Address:");
+            stringBuilder.AppendLine($"          - Street Num: {StreetNum}");
+            stringBuilder.AppendLine($"          - Street Name: {StreetName}");
+            stringBuilder.AppendLine($"          - Suburb: {Suburb}");
+            stringBuilder.AppendLine($"          - Postcode: {Postcode}");
+            stringBuilder.AppendLine($"          - State: {State}");
             return stringBuilder.ToString();
         }
     }

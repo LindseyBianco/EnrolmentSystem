@@ -41,10 +41,10 @@ namespace EnrolmentSystem
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("- Subject:");
-            stringBuilder.AppendLine($"  - Cost:  {subjectCode}");
-            stringBuilder.AppendLine($"  - Subject Name: {subjectName}");
-            stringBuilder.AppendLine($"  - Cost: {cost}");
+            stringBuilder.AppendLine("       - Subject:");
+            stringBuilder.AppendLine($"          - Subject Code:  {subjectCode}");
+            stringBuilder.AppendLine($"          - Subject Name: {subjectName}");
+            stringBuilder.AppendLine($"          - Cost: {cost}");
             return stringBuilder.ToString();
         }
     }

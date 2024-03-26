@@ -73,12 +73,12 @@ namespace EnrolmentSystem
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("- Student");
-            stringBuilder.AppendLine($"  - StudentID: {StudentID}");
-            stringBuilder.AppendLine($"  - Program: {Program}");
-            stringBuilder.AppendLine($"  - Date Registered: {DateRegistered}");
-            stringBuilder.AppendLine($"  - Enrollment: {Enrollment}");
-            stringBuilder.AppendLine($"  - Person Details: {base.ToString()}");
+            stringBuilder.AppendLine(" - Student:");
+            stringBuilder.AppendLine($"    - StudentID: {StudentID}");
+            stringBuilder.AppendLine($"    - Program: {Program}");
+            stringBuilder.AppendLine($"    - Date Registered: {DateRegistered}");
+            stringBuilder.AppendLine($"{Enrollment}");
+            stringBuilder.AppendLine($"{base.ToString()}");
             return stringBuilder.ToString();
         }
 
