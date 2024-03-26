@@ -42,11 +42,11 @@ namespace EnrolmentSystem
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("- Enrollment:");
-            stringBuilder.AppendLine($"  - Date Enrolled: {DateEnrolled}");
-            stringBuilder.AppendLine($"  - Grade: {Grade}");
-            stringBuilder.AppendLine($"  - Semester: {Semester}");
-            stringBuilder.AppendLine($"  - Subject: {Subject}");
+            stringBuilder.AppendLine("    - Enrollment:");
+            stringBuilder.AppendLine($"       - Date Enrolled: {DateEnrolled}");
+            stringBuilder.AppendLine($"       - Grade: {Grade}");
+            stringBuilder.AppendLine($"       - Semester: {Semester}");
+            stringBuilder.AppendLine($"{Subject}");
             return stringBuilder.ToString();
         }
     }
