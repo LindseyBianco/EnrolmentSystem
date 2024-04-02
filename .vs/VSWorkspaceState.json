@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EnrolmentSystem",
+    "\\EnrolmentSystemTests"
   ],
-  "SelectedNode": "\\LICENSE",
+  "SelectedNode": "\\EnrolmentSystemTests\\UtilityTests.cs",
   "PreviewInSolutionExplorer": false
 }
