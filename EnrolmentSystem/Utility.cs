@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnrolmentSystem
 {
-    class Utility
+    public class Utility
     {
         // Part 02 - Sorting and Searching Specifications
         // Part 02.01 - Searching
