@@ -14,6 +14,6 @@ C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\bin\Debug\E
 C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\bin\Debug\nunit.framework.xml
 C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\obj\Debug\EnrolmentSystemTests.csproj.AssemblyReference.cache
 C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\obj\Debug\EnrolmentSystemTests.csproj.CoreCompileInputs.cache
-C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\obj\Debug\EnrolmentSystemTests.csproj.CopyComplete
+C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\obj\Debug\Enrolmen.856D8A4B.Up2Date
 C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\obj\Debug\EnrolmentSystemTests.dll
 C:\windows 11 x macOS\ICTPRG547\EnrolmentSystem\EnrolmentSystemTests\obj\Debug\EnrolmentSystemTests.pdb
