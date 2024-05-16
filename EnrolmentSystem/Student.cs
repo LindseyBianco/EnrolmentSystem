@@ -10,17 +10,17 @@ namespace EnrolmentSystem
     public class Student : Person, IComparable<Student>
     {
         // variables
-        private int studentID;
+        private string studentID;
         private string program;
         private string dateRegistered;
 
         // get set properties
-        public int StudentID { get { return studentID; } set { studentID = value; } }
+        public string StudentID { get { return studentID; } set { studentID = value; } }
         public string Program { get { return program; } set { program = value; } }
         public string DateRegistered { get { return dateRegistered; } set { dateRegistered = value; } }
         public Enrollment Enrollment { get; set; }
 
-        const int DEF_STUDENT_ID = -1;
+        const string DEF_STUDENT_ID = "No studentID provided.";
         const string DEFAULT_PROGRAM = "No program provided.";
         const string DEFAULT_DATE_REGISTERED = "No dateRegistered provided.";
 
@@ -40,7 +40,7 @@ namespace EnrolmentSystem
         /// <param name="program">The program in which the student is enrolled.</param>
         /// <param name="dateRegistered">The date when the student was registered.</param>
         /// <param name="enrollment">The enrollment details of the student.</param>
-        public Student(int studentID, string program, string dateRegistered, Enrollment enrollment) : base()
+        public Student(string studentID, string program, string dateRegistered, Enrollment enrollment) : base()
         {
             StudentID = studentID;
             Program = program;
@@ -57,7 +57,7 @@ namespace EnrolmentSystem
         /// <param name="dateRegistered">The date when the student was registered.</param>
         /// <param name="person">The personal details of the student (name, email, phone number, address).</param>
         /// <param name="enrollment">The enrollment details of the student.</param>
-        public Student(int studentID, string program, string dateRegistered, Person person, Enrollment enrollment) : base(person.Name, person.Email, person.PhoneNumber, person.Address)
+        public Student(string studentID, string program, string dateRegistered, Person person, Enrollment enrollment) : base(person.Name, person.Email, person.PhoneNumber, person.Address)
         {
             StudentID = studentID;
             Program = program;
@@ -126,22 +126,22 @@ namespace EnrolmentSystem
 
         public static bool operator <(Student a, Student b)
         {
-            return a.StudentID < b.StudentID;
+            return string.Compare(a.StudentID, b.StudentID) < 0;
         }
 
         public static bool operator <=(Student a, Student b)
         {
-            return a.StudentID <= b.StudentID;
+            return string.Compare(a.StudentID, b.StudentID) <= 0;
         }
 
         public static bool operator >(Student a, Student b)
         {
-            return a.StudentID > b.StudentID;
+            return string.Compare(a.StudentID, b.StudentID) > 0;
         }
 
         public static bool operator >=(Student a, Student b)
         {
-            return a.StudentID >= b.StudentID;
+            return string.Compare(a.StudentID, b.StudentID) >= 0;
         }
 
         // override HashSet
@@ -153,7 +153,7 @@ namespace EnrolmentSystem
         // override CompareTo
         public int CompareTo(Student other)
         {
-            return this.StudentID.CompareTo(other.studentID);
+            return string.Compare(this.StudentID, other.studentID);
         }
 
         public int CompareTo(object obj)
@@ -163,6 +163,17 @@ namespace EnrolmentSystem
             if (!(obj is Student))
                 throw new ArgumentException("Expected Student istance is type Student.");
             return CompareTo((Student)obj);
+        }
+
+        public int Compare(Student a, Student b)
+        {
+            if (a == null && b == null)
+            return 0;
+            if (a == null)
+            return -1;
+            if (b == null)
+            return 1;
+            return string.Compare(a.studentID, b.studentID, StringComparison.CurrentCulture);
         }
 
         

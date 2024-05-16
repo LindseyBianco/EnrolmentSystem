@@ -21,19 +21,27 @@ namespace EnrolmentSystem
         /// <returns>The index of the target element if found, otherwise -1.</returns>
         public static int LinearSearchArray<T>(T[] inputArray, T target) where T : IComparable<T>
         {
-            int index = 0;
-            bool found = false;
-
-            while (!found && index < inputArray.Length)
+            try
             {
-                if (target.CompareTo(inputArray[index]) == 0)
-                    found = true;
-                else index++;
-            }
-            if (index < inputArray.Length)
-                return index;
-            else
+                int index = 0;
+                bool found = false;
+
+                while (!found && index < inputArray.Length)
+                {
+                    if (target.CompareTo(inputArray[index]) == 0)
+                        found = true;
+                    else index++;
+                }
+                if (index < inputArray.Length)
+                    return index;
+                else
+                    return -1;
+            } 
+            catch (Exception e) 
+            {
+                Console.WriteLine("ERROR: " + e);
                 return -1;
+            }
         }
 
         // binary search method
@@ -46,11 +54,12 @@ namespace EnrolmentSystem
         /// <returns>The index of the target element in the array, or -1 if not found.</returns>
         public static int BinarySearchArray<T>(T[] inputArray, T target) where T : IComparable<T>
         {
-            Array.Sort(inputArray);
-            int min = 0;
-            int mid;
-            int max = inputArray.Length - 1;
-
+            try
+            {
+                Array.Sort(inputArray);
+                int min = 0;
+                int mid;
+                int max = inputArray.Length - 1;
             do
             {
                 mid = (min + max) / 2;
@@ -63,8 +72,13 @@ namespace EnrolmentSystem
                 else
                     max = mid - 1;
             } while (min <= max);
-
-            return -1;
+                return -1;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ERROR: " + e);
+                return -1;
+            }
         }
 
         // bubble sort asc method

@@ -26,15 +26,15 @@ namespace EnrolmentSystemTests
         {
             studentLinkedList = new LinkedList<Student>();
 
-            student968 = new Student(968, "nil", "-1", new Enrollment());
-            student516 = new Student(516, "nil", "-1", new Enrollment());
-            student535 = new Student(535, "nil", "-1", new Enrollment());
-            student091 = new Student(091, "nil", "-1", new Enrollment());
-            student560 = new Student(560, "nil", "-1", new Enrollment());
-            student345 = new Student(345, "nil", "-1", new Enrollment());
-            student882 = new Student(882, "nil", "-1", new Enrollment());
-            student599 = new Student(599, "nil", "-1", new Enrollment());
-            student302 = new Student(302, "nil", "-1", new Enrollment());
+            student968 = new Student("968", "nil", "-1", new Enrollment());
+            student516 = new Student("516", "nil", "-1", new Enrollment());
+            student535 = new Student("535", "nil", "-1", new Enrollment());
+            student091 = new Student("091", "nil", "-1", new Enrollment());
+            student560 = new Student("560", "nil", "-1", new Enrollment());
+            student345 = new Student("345", "nil", "-1", new Enrollment());
+            student882 = new Student("882", "nil", "-1", new Enrollment());
+            student599 = new Student("599", "nil", "-1", new Enrollment());
+            student302 = new Student("302", "nil", "-1", new Enrollment());
 
         }
 

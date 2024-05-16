@@ -16,16 +16,16 @@ namespace EnrolmentSystemTests
         [SetUp]
         public void Setup()
         {
-            Student student968 = new Student(968, "nil", "-1", new Enrollment());
-            Student student516 = new Student(516, "nil", "-1", new Enrollment());
-            Student student535 = new Student(535, "nil", "-1", new Enrollment());
-            Student student091 = new Student(091, "nil", "-1", new Enrollment());
-            Student student560 = new Student(560, "nil", "-1", new Enrollment());
-            Student student345 = new Student(345, "nil", "-1", new Enrollment());
-            Student student882 = new Student(882, "nil", "-1", new Enrollment());
-            Student student599 = new Student(599, "nil", "-1", new Enrollment());
-            Student student302 = new Student(302, "nil", "-1", new Enrollment());
-            Student student683 = new Student(683, "nil", "-1", new Enrollment());
+            Student student968 = new Student("968", "nil", "-1", new Enrollment());
+            Student student516 = new Student("516", "nil", "-1", new Enrollment());
+            Student student535 = new Student("535", "nil", "-1", new Enrollment());
+            Student student091 = new Student("091", "nil", "-1", new Enrollment());
+            Student student560 = new Student("560", "nil", "-1", new Enrollment());
+            Student student345 = new Student("345", "nil", "-1", new Enrollment());
+            Student student882 = new Student("882", "nil", "-1", new Enrollment());
+            Student student599 = new Student("599", "nil", "-1", new Enrollment());
+            Student student302 = new Student("302", "nil", "-1", new Enrollment());
+            Student student683 = new Student("683", "nil", "-1", new Enrollment());
             
             students = new Student[]
             { 

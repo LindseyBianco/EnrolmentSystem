@@ -10,6 +10,6 @@ namespace EnrolmentSystem
     {
         public BinarySearchTreeNode LeftNode { get; set; }
         public BinarySearchTreeNode RightNode { get; set; }
-        public int Data { get; set; }
+        public string Data { get; set; }
     }
 }

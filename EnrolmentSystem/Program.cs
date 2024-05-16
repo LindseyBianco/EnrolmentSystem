@@ -29,7 +29,7 @@ namespace EnrolmentSystem
             Person person02 = new Person("Lindsey", "lindsey@student.com.au", "0401234567", address02);
             Subject subject02 = new Subject("ICT000123", "C#", 123.45);
             Enrollment enrollment02 = new Enrollment("01/03/24", "PASS", "S1", subject02);
-            Student student02 = new Student(516, "IT", "01/03/24", person02, enrollment02);
+            Student student02 = new Student("516", "IT", "01/03/24", person02, enrollment02);
 
             Console.WriteLine("Student 02 - Args Given");
             Console.WriteLine(student02);
@@ -40,7 +40,7 @@ namespace EnrolmentSystem
             Person person03 = new Person("John Appleseed", "jappleseedy@student.com.au", "0407654321", address03);
             Subject subject03 = new Subject("ICT000456", "Java", 543.21);
             Enrollment enrollment03 = new Enrollment("01/03/24", "PASS", "S1", subject03);
-            Student student03 = new Student(247, "IT", "01/03/24", person03, enrollment03);
+            Student student03 = new Student("247", "IT", "01/03/24", person03, enrollment03);
 
             result = student03.Equals(student02);
             Console.WriteLine("Student 03 .Equals student02: " + result);
@@ -62,9 +62,9 @@ namespace EnrolmentSystem
 
             // Part 02 - Sorting and Searching Specifications
             // Part 02.01 - Searching
-            Student student04 = new Student(104, "IT", "12/03/24", new Enrollment());
-            Student student05 = new Student(166, "Chemistry", "12/03/24", new Enrollment());
-            Student student06 = new Student(257, "Art", "12/03/24", new Enrollment());
+            Student student04 = new Student("104", "IT", "12/03/24", new Enrollment());
+            Student student05 = new Student("166", "Chemistry", "12/03/24", new Enrollment());
+            Student student06 = new Student("257", "Art", "12/03/24", new Enrollment());
             Console.WriteLine("Display Order");
 
             DisplayOrder(student04, student05);
@@ -100,9 +100,24 @@ namespace EnrolmentSystem
                 Console.WriteLine("    - " + student.StudentID);
             }
 
+          
+            
+            Console.WriteLine("student06 studentID: " + student06.StudentID + " < student05 studentID: " + student05.StudentID);
+            Console.WriteLine(student06 < student05);
 
+            Console.WriteLine("student06 studentID: " + student06.StudentID + " > student05 studentID: " + student05.StudentID);
+            Console.WriteLine(student06 > student05);
 
+            Console.WriteLine("student06 studentID: " + student06.StudentID + " = student05 studentID: " + student05.StudentID);
+            Console.WriteLine(student06 == student05);
 
+            Console.WriteLine("student06 studentID: " + student06.StudentID + " <= student05 studentID: " + student05.StudentID);
+            Console.WriteLine(student06 <= student05);
+
+            Console.WriteLine("student06 studentID: " + student06.StudentID + " >= student05 studentID: " + student05.StudentID);
+            Console.WriteLine(student06 >= student05);
+            
+        
             Console.ReadKey();
         }
 

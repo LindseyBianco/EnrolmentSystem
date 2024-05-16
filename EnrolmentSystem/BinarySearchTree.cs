@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
+
 namespace EnrolmentSystem
 {
     public class BinarySearchTree
     {
         public BinarySearchTreeNode Root { get; set; }
 
-        public bool Add(int value)
+        public bool Add(string value)
         {
             BinarySearchTreeNode before = null;
             BinarySearchTreeNode after = this.Root;
@@ -19,9 +20,10 @@ namespace EnrolmentSystem
             while (after != null)
             {
                 before = after;
-                if (value < after.Data) 
+                int comparisonResult = value.CompareTo(after.Data);
+                if (comparisonResult < 0)
                     after = after.LeftNode;
-                else if (value > after.Data)
+                else if (comparisonResult > 0)
                     after = after.RightNode;
                 else
                 {
@@ -36,7 +38,8 @@ namespace EnrolmentSystem
                 this.Root = newNode;
             else
             {
-                if (value < before.Data)
+                int comparisonResult = value.CompareTo(before.Data);
+                if (comparisonResult < 0)
                     before.LeftNode = newNode;
                 else
                     before.RightNode = newNode;
@@ -44,18 +47,19 @@ namespace EnrolmentSystem
             return true;
         }
 
-        public BinarySearchTreeNode Find(int value)
+        public BinarySearchTreeNode Find(string value)
         {
             return this.Find(value, this.Root);
         }
 
-        private BinarySearchTreeNode Find(int value, BinarySearchTreeNode parent)
+        private BinarySearchTreeNode Find(string value, BinarySearchTreeNode parent)
         {
             if (parent != null)
             {
-                if (value == parent.Data)
+                int comparisonResult = value.CompareTo(parent.Data);
+                if (comparisonResult == 0)
                     return parent;
-                if (value < parent.Data)
+                if (comparisonResult < 0)
                     return Find(value, parent.LeftNode);
                 else
                     return Find(value, parent.RightNode);
@@ -63,18 +67,19 @@ namespace EnrolmentSystem
             return null;
         }
 
-        public void Remove(int value)
+        public void Remove(string value)
         {
             this.Root = Remove(this.Root, value);
         }
 
-        private BinarySearchTreeNode Remove(BinarySearchTreeNode parent, int key)
+        private BinarySearchTreeNode Remove(BinarySearchTreeNode parent, string key)
         {
             if (parent == null)
                 return parent;
-            if (key < parent.Data)
+            int comparisonResult = key.CompareTo(parent.Data);
+            if (comparisonResult < 0)
                 parent.LeftNode = Remove(parent.LeftNode, key);
-            else if (key > parent.Data)
+            else if (comparisonResult > 0)
                 parent.RightNode = Remove(parent.RightNode, key);
             else
             {
@@ -90,9 +95,9 @@ namespace EnrolmentSystem
             return parent;
         }
 
-        private int MinValue(BinarySearchTreeNode node)
+        private string MinValue(BinarySearchTreeNode node)
         {
-            int minv = node.Data;
+            string minv = node.Data;
 
             while (node.LeftNode != null)
             {
@@ -102,34 +107,40 @@ namespace EnrolmentSystem
             return minv;
         }
 
-        public void TraversePreOrder(BinarySearchTreeNode parent, Action<int> action)
+        public string TraversePreOrder(BinarySearchTreeNode parent)
         {
-            if (parent != null)
-            {
-                action(parent.Data);
-                TraversePreOrder(parent.LeftNode, action);
-                TraversePreOrder(parent.RightNode, action);
-            }
+            if (parent == null)
+                return string.Empty;
+
+            string result = parent.Data + " ";
+            result += TraversePreOrder(parent.LeftNode);
+            result += TraversePreOrder(parent.RightNode);
+
+            return result;
         }
 
-        public void TraverseInOrder(BinarySearchTreeNode parent)
+        public string TraverseInOrder(BinarySearchTreeNode parent)
         {
-            if (parent != null)
-            {
-                TraverseInOrder(parent.LeftNode);
-                Console.WriteLine(parent.Data + " ");
-                TraverseInOrder(parent.RightNode);
-            }
+            if (parent == null)
+                return string.Empty;
+
+            string result = TraverseInOrder(parent.LeftNode);
+            result += parent.Data + " ";
+            result += TraverseInOrder(parent.RightNode);
+
+            return result;
         }
 
-        public void TraversePostOrder(BinarySearchTreeNode parent)
+        public string TraversePostOrder(BinarySearchTreeNode parent)
         {
-            if (parent != null)
-            {
-                TraversePostOrder(parent.LeftNode);
-                TraversePostOrder(parent.RightNode);
-                Console.WriteLine(parent.Data + " ");
-            }
+            if (parent == null)
+                return string.Empty;
+
+            string result = TraversePostOrder(parent.LeftNode);
+            result += TraversePostOrder(parent.RightNode);
+            result += parent.Data + " ";
+
+            return result;
         }
     }
 }
