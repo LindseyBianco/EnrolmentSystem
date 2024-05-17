@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystem\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{698B5D34-9766-4B6D-AA65-F5AAADE550B6}|..\\EnrolmentSystemTests\\EnrolmentSystemTests.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystemtests\\binarysearchtreetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystem\\doublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|solutionrelative:doublylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystem\\binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|solutionrelative:binarysearchtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystem\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\binarysearchtreenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{009002DA-C0CA-4548-937D-EAF646663BEA}|EnrolmentSystem.csproj|solutionrelative:binarysearchtreenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{698B5D34-9766-4B6D-AA65-F5AAADE550B6}|..\\EnrolmentSystemTests\\EnrolmentSystemTests.csproj|c:\\windows 11 x macos\\ictprg547\\enrolmentsystem\\enrolmentsystemtests\\binarysearchtreetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,61 +29,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 226,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BinarySearchTree.cs",
-              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\BinarySearchTree.cs",
-              "RelativeDocumentMoniker": "BinarySearchTree.cs",
-              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\BinarySearchTree.cs",
-              "RelativeToolTip": "BinarySearchTree.cs",
-              "ViewState": "AQIAAAMAAACgMjMzM7MiwAoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T12:10:49.277Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BinarySearchTreeTest.cs",
-              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
-              "RelativeDocumentMoniker": "..\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
-              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
-              "RelativeToolTip": "..\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
-              "ViewState": "AQIAAC8AAABAZmZmZuYnwDgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T11:40:24.78Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAGsAAAAALjMzM3MmwHYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T04:57:58.727Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DoublyLinkedList.cs",
+              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\DoublyLinkedList.cs",
+              "RelativeDocumentMoniker": "DoublyLinkedList.cs",
+              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\DoublyLinkedList.cs",
+              "RelativeToolTip": "DoublyLinkedList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T12:49:20.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Utility.cs",
               "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\Utility.cs",
               "RelativeDocumentMoniker": "Utility.cs",
               "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\Utility.cs",
               "RelativeToolTip": "Utility.cs",
-              "ViewState": "AQIAADcAAAAABgAAAAAtwEQAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T07:46:18.768Z",
+              "WhenOpened": "2024-05-17T12:49:08.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BinarySearchTreeNode.cs",
+              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\BinarySearchTreeNode.cs",
+              "RelativeDocumentMoniker": "BinarySearchTreeNode.cs",
+              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\BinarySearchTreeNode.cs",
+              "RelativeToolTip": "BinarySearchTreeNode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T12:28:01.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BinarySearchTreeTest.cs",
+              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
+              "RelativeDocumentMoniker": "..\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
+              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
+              "RelativeToolTip": "..\\EnrolmentSystemTests\\BinarySearchTreeTest.cs",
+              "ViewState": "AQIAACoAAAAAUDMzMzPDvzUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T12:29:54.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BinarySearchTree.cs",
+              "DocumentMoniker": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\BinarySearchTree.cs",
+              "RelativeDocumentMoniker": "BinarySearchTree.cs",
+              "ToolTip": "C:\\windows 11 x macOS\\ICTPRG547\\EnrolmentSystem\\EnrolmentSystem\\BinarySearchTree.cs",
+              "RelativeToolTip": "BinarySearchTree.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T12:10:49.277Z",
               "EditorCaption": ""
             }
           ]
